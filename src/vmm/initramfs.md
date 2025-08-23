@@ -45,7 +45,7 @@ cpio ファイルは、以下の手順で展開および圧縮することがで
 ```bash
 # 展開
 mkdir x && cd x
-cpio -idv 2>/dev/null <../x
+cpio -idv 2>/dev/null <../rootfs.cpio
 # 圧縮
 cd x
 find . -print0 | cpio --owner root --null -o --format=newc > ../rootfs.cpio
