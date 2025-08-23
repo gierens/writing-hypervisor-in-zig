@@ -693,7 +693,7 @@ pub fn init(self: *Self, allocator: Allocator) Error!void {
 
 実行して最後まで処理が確認できたことを確認してみてください。
 とはいっても、**VMX Root Operation に遷移したということを直接的に確認する方法はありません**。
-とりわけ、VMX Non-root Operation にいる間に自身が VMX Operation にいるということを知る方法はありまえん。
+とりわけ、VMX Non-root Operation にいる間に自身が VMX Operation にいるということを知る方法はありません。
 これはセキュリティ的にゲストが自分が仮想化されていることを知ることがよろしくないためです。
 
 しかしながら、VMX Root Operation にいる間は間接的に確認する方法があります。

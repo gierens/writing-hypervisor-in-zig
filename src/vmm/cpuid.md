@@ -370,7 +370,7 @@ const feature_info_edx = cpuid.FeatureInfoEdx{
 > [!WARN] Linux における PCID の無効化
 > 最近の Intel Core CPU であれば、PCID はサポートされているはずです。
 > しかしながら、Alder Lake (12th Gen) 以降の CPU では、INVLPG 命令でグローバルページがフラッシュされないというバグがあります。
-> これに対処するため、Linux 6.4 移行のカーネルでは PCID を無効化するパッチ[^pcid-disable]が適用されています。
+> これに対処するため、Linux 6.4 以降のカーネルでは PCID を無効化するパッチ[^pcid-disable]が適用されています。
 > お使いのカーネルおよびCPUがこれに該当する場合、上記の `pcid` を `false` にしてゲストでも PCID を無効化してください。
 
 ### 0x6: Thermal and Power Management

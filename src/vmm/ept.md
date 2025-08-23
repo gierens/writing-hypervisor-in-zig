@@ -360,7 +360,7 @@ pub fn initEpt(
 
 ゲストのメモリサイズから必要な 2MiB ページの個数を計算し、その回数だけ先ほど実装した `map2m()` を呼び出します。
 
-これらの関数は、VMX Root Operation に入った後 VM を起動する前に `kernelMail()` から呼び出します:
+これらの関数は、VMX Root Operation に入った後 VM を起動する前に `kernelMain()` から呼び出します:
 
 <!-- i18n:skip -->
 ```ymir/main.zig
