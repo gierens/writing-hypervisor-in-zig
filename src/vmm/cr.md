@@ -426,7 +426,7 @@ switch (qual.access_type) {
 }
 ```
 
-忘れないで：
+忘れないで:
 
 ```ymir/arch/x86/vmx/vcpu.zig
 pub const Vcpu = struct {
